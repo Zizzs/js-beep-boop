@@ -5,6 +5,7 @@
 //      ~Numbers that contain a 0 are replaced (all digits) with "Beep!"
 //----------------------------------------------
 //      ~User is able to use the reset button to refresh the form for more input.
+//1:05pm -- Finished styling the page. Added name input and an extra line at the end for "lore" reasons as to why the robot is spitting out ridiclous lines of code.
 //Business Logic
 var userArray = [];
 var outputArray = [];
