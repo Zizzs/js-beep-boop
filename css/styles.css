@@ -1,0 +1,9 @@
+.panelStyle {
+    background-color: aquamarine;
+}
+
+body {
+    background-image: url("../img/woodBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

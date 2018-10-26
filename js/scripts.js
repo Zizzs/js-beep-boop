@@ -1,3 +1,10 @@
+//8:00am-10:30am -- Main Project Objectives Completed
+//----From Most Important to Least Important----
+//      ~Numbers divisible by 3 are replaced with "Custom Text"
+//      ~Numbers that contain a 1 are replaced (all digits) with "Boop!"
+//      ~Numbers that contain a 0 are replaced (all digits) with "Beep!"
+//----------------------------------------------
+//      ~User is able to use the reset button to refresh the form for more input.
 //Business Logic
 var userArray = [];
 var outputArray = [];
@@ -55,6 +62,7 @@ var beepBoop = function(userNumber) {
 
 //User Interface Logic
 $(document).ready(function() {
+    //Submit button within the form that when clicked, performs the function beepBoop.
     $("#submitButton").click(function(event) {
         event.preventDefault();
         var userNumber = parseInt($("input#userInput").val());
@@ -62,6 +70,7 @@ $(document).ready(function() {
         $("#userOutput").text(outputArray);
 
     });
+    //JQuery event that clears the form and resets it, so that the user may then input another number without issues.
     $("button#resetButton").click(function() {
         $("#userOutput").text("");
     });

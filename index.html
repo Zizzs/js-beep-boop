@@ -7,18 +7,26 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Beep Boop's Boopin Beepin</h1>
-        <div>
-            <form id="formInput">
-                <div>
-                    <label id="labelText"for="userInput">Enter a number:</label>
-                    <input id="userInput" type="number">
+        <h1>Welcome to Beep Boop's Boop'in Beep'in</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="panelLeft" class="panelStyle" class="panel panel-default">
+                    <form id="formInput">
+                        <div>
+                            <label id="labelText"for="userInput">Enter a number:</label>
+                            <input id="userInput" type="number">
+                        </div>
+                        <button id="submitButton" type="submit" class="btn btn-success">Calculate!</button>
+                        <button id="resetButton" class="btn btn-success">Reset!</button>
+                    </form>
                 </div>
-                <button id="submitButton" type="submit" class="btn btn-success">Calculate!</button>
-                <button id="resetButton" class="btn btn-success">Reset!</button>
-            </form>
+            </div>
+            <div class="col-md-6">
+                <div id="panelRight" class="panelStyle" class="panel panel-default">
+                    <span id="userOutput"></span>
+                </div>
+            </div>
         </div>
-        <span id="userOutput"></span>
     </div>
 </body>
     <script src="js/jquery-3.3.1.js"></script>
