@@ -9,30 +9,41 @@
 <body>
     <div class="container">
         <div id="signDiv">
-            <h1 id="signHeader">Welcome to Beep Boop's Boop'in Beep'in</h1>
+            <h1 id="signHeader">Welcome to Beep Boop's Boop'inn Beep'inn</h1>
         </div>
         <div id="mainRow" class="row">
             <div class="col-md-6">
                 <div id="panelLeft" class="panelStyle" class="panel panel-default">
                     <form id="formInput">
                         <div id=leftRobotDiv>
+                            <img id="panelPinLeft" src="img/panelButton.png">
                             <div id="robotAskDiv">
                                 <span id="robotAsk">កខគឃងចឆជ<br>ឈញដឋឌឍ>ណតថទធ</span>
                                 <span id="robotAsk">Translation for Humans:</span>
                                 <span id="robotAsk">Type in a Number to Boop and Beep!</span>
+
                             </div>  
                             <div>
-                                <input id="userInput" type="number">
+                                <input id="userInput" type="number" required>
                             </div>
                         </div>
                         <button id="submitButton" type="submit" class="btn btn-success">Calculate!</button>
                         <button id="resetButton" class="btn btn-success">Reset!</button>
+                        <div id="robotAskNameDiv">
+                            <span id="robotAskName">Type in your Name.</span>
+                            <br>
+                            <br>
+                            <input id="userInputName" type="text" required>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="col-md-6">
                 <div id="panelRight" class="panelStyle" class="panel panel-default">
                     <div id="rightRobotDiv">
+                        <img id="panelPinRight" src="img/panelButton.png">
+                    </div>
+                    <div>
                         <p id="robotTextOutput"><span id="userOutput"></span></p>
                     </div>
                 </div>

@@ -10,7 +10,8 @@ var userArray = [];
 var outputArray = [];
 
 var beepBoop = function(userNumber) {
-
+    //Grabs the User's Name from Input
+    var userName = $("input#userInputName").val();
     //Empties the Array, allows the user to run the script multiple times
     outputArrayLength = outputArray.length;
     if (outputArrayLength >0) {
@@ -34,7 +35,7 @@ var beepBoop = function(userNumber) {
         if ((num%3) === 0 && num!=0) {
             switch (num) {
                 default:
-                    num = "No."
+                    num = userName + ", Would you like a glass of motor oil?"
                     break;
             }
         //Script searches the string for any case of zero and above, if it finds a ONE in any position in the string, it outputs a Boop!
@@ -56,6 +57,7 @@ var beepBoop = function(userNumber) {
         outputArray.push(num);
         console.log(outputArray);
     });
+    outputArray.push("Sorry, My speech module is broken...")
 };
 
 
