@@ -31,7 +31,7 @@ OR
 
 _Visit the GH-Pages link:_
 
-_https://zizzs.github.io/js-beep-boop/index.html_
+_https://zizzs.github.io/js-beep-boop/_
 
 _This website does not require a server or database to run._
 
