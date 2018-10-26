@@ -8,18 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Beep Boop's Boop'in Beep'in</h1>
-        <div class="row">
+        <div id="signDiv">
+            <h1 id="signHeader">Welcome to Beep Boop's Boop'in Beep'in</h1>
+        </div>
+        <div id="mainRow" class="row">
             <div class="col-md-6">
                 <div id="panelLeft" class="panelStyle" class="panel panel-default">
                     <form id="formInput">
                         <div id=leftRobotDiv>
-                            <span id="robotAsk">កខគឃងចឆជ<br>ឈញដឋឌឍ>ណតថទធ</span>
-                            <span id="robotAsk">Translation for Humans:</span>
-                            <span id="robotAsk">Type in a Number to Boop and Beep!</span>
-                        </div>
-                        <div>
-                            <input id="userInput" type="number">
+                            <div id="robotAskDiv">
+                                <span id="robotAsk">កខគឃងចឆជ<br>ឈញដឋឌឍ>ណតថទធ</span>
+                                <span id="robotAsk">Translation for Humans:</span>
+                                <span id="robotAsk">Type in a Number to Boop and Beep!</span>
+                            </div>  
+                            <div>
+                                <input id="userInput" type="number">
+                            </div>
                         </div>
                         <button id="submitButton" type="submit" class="btn btn-success">Calculate!</button>
                         <button id="resetButton" class="btn btn-success">Reset!</button>
@@ -28,7 +32,9 @@
             </div>
             <div class="col-md-6">
                 <div id="panelRight" class="panelStyle" class="panel panel-default">
-                    <span id="userOutput"></span>
+                    <div id="rightRobotDiv">
+                        <p id="robotTextOutput"><span id="userOutput"></span></p>
+                    </div>
                 </div>
             </div>
         </div>

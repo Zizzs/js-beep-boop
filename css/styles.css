@@ -1,7 +1,12 @@
 .panelStyle {
-    background-image: url("../img/woodPanel.jpg");
+    background-image: url("../img/woodPanel3.jpg");
     border-radius: 35px;
-    height: 500px;
+    height: 560px;
+    background-size: 100;
+}
+
+#panelRight {
+    margin-top: 0px;
 }
 
 body {
@@ -13,38 +18,87 @@ body {
 #submitButton {
     float: left;
     background: url("../img/woodButton.jpeg");
+    box-shadow: 1px 1px 5px grey;
     border: none;
     width: 200px;
     height: 50px;
     margin-left: 25px;
-    margin-top: 90px;
+    margin-top: 35px;
 }
 
 #resetButton {
     float: right;
     background: url("../img/woodButton.jpeg");
+    box-shadow: 1px 1px 5px grey;
     border: none;
     width: 200px;
     height: 50px;
     margin-right: 25px;
-    margin-top: 90px;
+    margin-top: 35px;
 }
 
 #userInput {
     margin-top: 50px;
-    margin-left: 34%;
+    margin-bottom: 90px;
 }
 
 #robotAsk {
     font-family: 'Taprom', cursive;
     color: white;
-    font-size: 35px;
+    font-size: 30px;
+}
+
+#robotAskDiv {
+    width: 360px;
+    margin-left: 35px;
+    padding-top: 45px;
 }
 
 #leftRobotDiv {
+    background: url("../img/paperPanel.png");
+    background-size: cover;
     width: 450px;
     text-align: center;
-    border-radius: 25px;
-    background: url("../img/woodButton.jpeg");
     margin-left: 45px;
 }
+
+#rightRobotDiv {
+    background: url("../img/paperPanel.png");
+    background-size: cover;
+    width: 450px;
+    text-align: center;
+    margin-left: 45px; 
+    padding-bottom: 470px; 
+}
+
+#signDiv {
+    background: url("../img/woodSign.png");
+    background-size: contain;
+    width: 900px;
+    margin-left: 80px;
+}
+
+#signHeader {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    margin-left: 90px;
+    width: 700px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: #1E0000;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+}
+
+#mainRow {
+    margin-top: 0px;
+}
+
+#robotTextOutput {
+    text-align: center;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
