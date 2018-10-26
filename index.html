@@ -9,12 +9,13 @@
     <div class="container">
         <h1>Welcome to Beep Boop's Boopin Beepin</h1>
         <div>
-            <form id="formInput">
+            <form id="formInput" onsubmit="return checkForm(this);">
                 <div>
                     <label id="labelText"for="userInput">Enter a number:</label>
                     <input id="userInput" type="number">
                 </div>
-                <button type="submit" class="btn btn-success">Show me the Boops and Beeps!</button>
+                <button type="submit" class="btn btn-success" value="Calculate!">Show me the Boops and Beeps!</button>
+                <button type="button" class="btn btn-success" value="Reset" onclick="resetForm(this.form);">Show me the Boops and Beeps!</button>
             </form>
         </div>
         <span id="userOutput"></span>
