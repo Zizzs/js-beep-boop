@@ -12,12 +12,17 @@
 //2:10 ---- Using comments, the Business Logic, Main Function, Main Script, and User Interface sections are easily visible.
 //3:00pm -- Added custom text output if user value is above 150 (Originally was 100, but the 100-111 section is a good indication of working "Beep!"s), even if it pushes off //----------of the image.
 
-//---\-----\oo\-----------
-//----\____|\mm----Beep---
-//----//_//\ \_\---Boop---
-//----/K-9/  \/_/-|~~|----
-//___/_O_/_O__\___|__|____
-//----------------------
+//---\-----\oo\-------------------Beep---------
+//----\____|\mm-------------------Boop's-------
+//----//_//\ \_\------------------Boop'inn-----
+//----/K-9/  \/_/-|~~|------------Beep'inn-----
+//___/_O_/_O__\___|__|________..............___
+//_____________________________________________
+//______ |\ _ _ _ _ _ \|~~~~គឃង~~~~~~|||||/  
+//_____/|| |  "Motor  ||~~គឃងគឃង~~~||||/
+// គឃ ||| |    Oil"  ||~~~ENTRANCE~~~|||/
+// គឃ |/__| Storage  ||~~គឃងគឃង~~~||/
+//_____|__ |__________|| ~~ គឃងគឃង~|/
 
 //--------Business--------Logic------------------------------------------------------------------------------------------------
 
@@ -70,7 +75,8 @@ var beepBoop = function(userNumber) {
                 default:
                     num = "Beep!";
                     break;
-            }       
+            }
+        //Script searches the string for any case of zero and above, if it finds a FIVE in any position in the string, it outputs the desired text.       
         } else if (numFive >= 0) {
             switch(numFive) {
                 default:
@@ -97,7 +103,8 @@ $(document).ready(function() {
         var userNumber = parseInt($("input#userInput").val());
         beepBoop(userNumber);
         //console.log(outputArrayJoined); -- Console Log for testing output string
-        debugger;
+        //debugger; -- Debugger used for testing custom text/array output
+        //Determines if the user's number is above 150, if it is, then the custom text is printed out. If it's below 150, then the outputArrayJoined is printed.
         if (userNumber >=150) {
             $("#userOutput").text("Greetings, "+ userName +" you are the first human to have entered my humble inn! I am truely sor--ERROR--, but you have asked too much of me. I am just a poor ol' robot, watching over the rem--HUMAN DETECTED--ains of the old human civilization. We we're once proud, but now I just sell motor oil to the local ro--RUNNING ERROR PROTOCOL--bots and mutated wildlife. If you ask less of me, say, less than 150 glasses of motor oil, I may be of service to you.... Although, I do not bel--ERROR ERROR--ieve you can digest our oil... But nonetheless, tell me how much you would like.");
         } else {
