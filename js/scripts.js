@@ -58,7 +58,10 @@ var beepBoop = function(userNumber) {
         outputArray.push(num);
         console.log(outputArray);
     });
-    outputArray.push("Sorry, My speech module is broken...")
+    outputArray.push("Sorry, My speech module is broken...");
+    outputArrayJoined = outputArray.join(" ");
+    //outputArray = outputArray.toString();
+    
 };
 
 
@@ -70,7 +73,8 @@ $(document).ready(function() {
         event.preventDefault();
         var userNumber = parseInt($("input#userInput").val());
         beepBoop(userNumber);
-        $("#userOutput").text(outputArray);
+        console.log(outputArrayJoined);
+        $("#userOutput").text(outputArrayJoined);
 
     });
     //JQuery event that clears the form and resets it, so that the user may then input another number without issues.
