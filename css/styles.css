@@ -143,3 +143,21 @@ body {
     margin-left: 200px;
     margin-bottom: -65px;
 }
+
+#oilOne {
+    margin-left: -70px;
+    transform: rotate(120deg);
+    width: 600px;
+    position: relative;
+}
+
+#oilTwo {
+    margin-left: 900px;
+    transform: rotate(250deg);
+    width: 600px;
+    position: relative;
+}
+
+#mainDiv {
+    margin-top: -1100px;
+}
