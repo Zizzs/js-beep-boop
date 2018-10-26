@@ -1,14 +1,23 @@
 //8:00am-10:30am -- Main Project Objectives Completed
 //----From Most Important to Least Important-------------------------------
-//      ~Numbers that contain a 5 are replaced with "Custom Text"
+//      ~If the user input is above 150, custom text is replaced instead  |
 //      ~Numbers divisible by 3 are replaced with "Custom Text"           |
 //      ~Numbers that contain a 1 are replaced (all digits) with "Boop!"  |
 //      ~Numbers that contain a 0 are replaced (all digits) with "Beep!"  |
+//      ~Numbers that contain a 5 are replaced with "Custom Text"         |
 //-------------------------------------------------------------------------
 //      ~User is able to use the reset button to refresh the form for more input.
 //1:05pm -- Finished styling the page. Added name input and an extra line at the end for "lore" reasons as to why the robot is spitting out ridiclous lines of code.
 //1:54pm -- Cleaned up output string, now returns with no commas.
 //2:10 ---- Using comments, the Business Logic, Main Function, Main Script, and User Interface sections are easily visible.
+//3:00pm -- Added custom text output if user value is above 150 (Originally was 100, but the 100-111 section is a good indication of working "Beep!"s), even if it pushes off //----------of the image.
+
+//---\-----\oo\-----------
+//----\____|\mm----Beep---
+//----//_//\ \_\---Boop---
+//----/K-9/  \/_/-|~~|----
+//___/_O_/_O__\___|__|____
+//----------------------
 
 //--------Business--------Logic------------------------------------------------------------------------------------------------
 
@@ -16,7 +25,6 @@
 var userArray = [];
 //Final Output Array
 var outputArray = [];
-
 //---------Main--------Function------------Block-------------------------------------------------------------------------------
 var beepBoop = function(userNumber) {
     //Grabs the User's Name from Input
@@ -66,7 +74,7 @@ var beepBoop = function(userNumber) {
         } else if (numFive >= 0) {
             switch(numFive) {
                 default:
-                    num = ", ERROR PROTOCOL,"
+                    num = ", ERROR PROTOCOL, HUMAN INPUT,"
                     break;
             }
         }
@@ -85,11 +93,16 @@ $(document).ready(function() {
     //Submit button within the form that when clicked, performs the function beepBoop.
     $("#submitButton").click(function(event) {
         event.preventDefault();
+        var userName = $("input#userInputName").val();
         var userNumber = parseInt($("input#userInput").val());
         beepBoop(userNumber);
         //console.log(outputArrayJoined); -- Console Log for testing output string
-        $("#userOutput").text(outputArrayJoined);
-
+        debugger;
+        if (userNumber >=150) {
+            $("#userOutput").text("Greetings, "+ userName +" you are the first human to have entered my humble inn! I am truely sor--ERROR--, but you have asked too much of me. I am just a poor ol' robot, watching over the rem--HUMAN DETECTED--ains of the old human civilization. We we're once proud, but now I just sell motor oil to the local ro--RUNNING ERROR PROTOCOL--bots and mutated wildlife. If you ask less of me, say, less than 150 glasses of motor oil, I may be of service to you.... Although, I do not bel--ERROR ERROR--ieve you can digest our oil... But nonetheless, tell me how much you would like.");
+        } else {
+            $("#userOutput").text(outputArrayJoined);
+        }
     });
 
     //JQuery event that clears the form and resets it, so that the user may then input another number without issues.

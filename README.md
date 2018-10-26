@@ -11,10 +11,11 @@ _This website has the user input one number and one name. It then uses the numbe
 
          ----From Most Important to Least Important----
 
-      
+      ~If the user input is above 150, then custom text is outputted instead of the calculated Array.
       ~Numbers divisible by 3 are replaced with "userName + ", Would you like a glass of motor oil?""
       ~Numbers that contain a 1 are replaced (all digits) with "Boop!"
-      ~Numbers that contain a 0 are replaced (all digits) with "Beep!"_
+      ~Numbers that contain a 0 are replaced (all digits) with "Beep!"
+      ~Numbers that contain a 5 are replaced (all digits) with "ERROR PROTOCOL, HUMAN INPUT"
 
 _After creating the new array, it then outputs it to the user._
 
