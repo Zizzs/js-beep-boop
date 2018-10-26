@@ -1,9 +1,50 @@
 .panelStyle {
-    background-color: aquamarine;
+    background-image: url("../img/woodPanel.jpg");
+    border-radius: 35px;
+    height: 500px;
 }
 
 body {
     background-image: url("../img/woodBackground.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+#submitButton {
+    float: left;
+    background: url("../img/woodButton.jpeg");
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 90px;
+}
+
+#resetButton {
+    float: right;
+    background: url("../img/woodButton.jpeg");
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-right: 25px;
+    margin-top: 90px;
+}
+
+#userInput {
+    margin-top: 50px;
+    margin-left: 34%;
+}
+
+#robotAsk {
+    font-family: 'Taprom', cursive;
+    color: white;
+    font-size: 35px;
+}
+
+#leftRobotDiv {
+    width: 450px;
+    text-align: center;
+    border-radius: 25px;
+    background: url("../img/woodButton.jpeg");
+    margin-left: 45px;
 }
