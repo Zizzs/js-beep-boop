@@ -2,17 +2,6 @@
 var userArray = [];
 var outputArray = [];
 
-function checkForm(form) {
-    form.myButton.disabled = true;
-    form.myButton.value = "Beep Boop"
-    return true;
-};
-
-function resetForm(form) {
-    form.myButton.disabled = false;
-    form.myButton.value = "Calculate!";
-};
-
 var beepBoop = function(userNumber) {
 
     //Empties the Array, allows the user to run the script multiple times
@@ -66,11 +55,14 @@ var beepBoop = function(userNumber) {
 
 //User Interface Logic
 $(document).ready(function() {
-    $("form#formInput").submit(function(event) {
-      event.preventDefault();
-      var userNumber = parseInt($("input#userInput").val());
-      beepBoop(userNumber);
-      $("#userOutput").text(outputArray);
+    $("#submitButton").click(function(event) {
+        event.preventDefault();
+        var userNumber = parseInt($("input#userInput").val());
+        beepBoop(userNumber);
+        $("#userOutput").text(outputArray);
 
+    });
+    $("button#resetButton").click(function() {
+        $("#userOutput").text("");
     });
   });
